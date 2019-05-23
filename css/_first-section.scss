@@ -1,0 +1,118 @@
+.first-section {
+    background: $dark-background url(../img/photo.png) no-repeat top center;
+    background-size: auto;
+    padding-top: 42px;
+    @media only screen and (max-width: 575px) {
+        background: $dark-background;
+      }
+    
+    .menu-wrap {
+        
+                @media only screen and (max-width: 575px) {
+            display: none;
+          }
+        ul.main-menu {
+            list-style: none;
+            padding: 0;
+            display: flex;
+           
+              
+    
+            li {
+                text-decoration: none;
+    
+                a {
+                    color: $white-text-color;
+                    font-size: $font-size;
+                    line-height: $font-size;
+                    margin-left: 12px;
+                    margin-right: 12px;
+                    text-decoration: none;
+    
+                    @media only screen and (max-width: 1199px) {
+                        font-size: $font-size - 2px;
+                        margin-left: 8px;
+                        margin-right: 8px;                    
+                    }
+                    @media only screen and (max-width: 767px) {
+                        margin-left: 4px;
+                        margin-right: 4px;  
+                      }
+    
+                    &:hover {
+                        padding-bottom: 5px;
+                        font-size: $font-size + 4px;
+                        border-bottom: 1px solid $blue-text-color;
+                    }
+                }
+            }
+    
+        }
+    }
+
+    
+
+    .introducing {
+
+        padding-top: 66px;
+        position: relative;
+        padding-bottom: 110px;
+
+        h5 {
+            @extend %for-h5;
+        }
+
+        h1 {
+            margin-top: 30px;
+            color: $white-text-color;
+            font-size: $font-size-for-h1;
+            line-height: $font-size-for-h1;
+            font-weight: 600;
+
+            @media only screen and (max-width: 1199px) {
+                font-size: $font-size-for-h1 - 8px;
+            }
+            @media only screen and (max-width: 375px) {
+                font-size: $font-size-for-h1 - 18px;
+              }
+        }
+
+        p {
+            margin: 36px 0 62px;
+            line-height: $font-size + 6px;
+            color: $grey-text-color;
+    
+            
+        }
+
+        button {
+            @extend %for-button;
+
+            &.download {
+                @extend %for-button-download;
+            }
+
+            &.features {
+                @extend %for-button-features;
+            }
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            background: url(../img/devices.png) no-repeat;
+            width: 505px;
+            height: 519px;
+            right: -18px;
+            bottom: 0;
+
+            @media only screen and (max-width: 991px) {
+                visibility: hidden;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 1199px) {}

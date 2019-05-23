@@ -1,0 +1,54 @@
+.product-overviev {
+
+    padding-top: 65px;
+    text-align: center;
+
+    h5 {
+        @extend %for-h5;
+        margin-bottom: 6px;
+    }
+
+    h2 {
+        @extend %for-h2;
+
+    }
+
+    h3 {
+        font-size: $font-size-for-h3;
+        margin-bottom: 26px;
+    }
+
+    .line {
+        margin-top: 35px;
+        margin-bottom: 74px;
+    }
+
+    .img-wrappen {
+        width: 88px;
+        height: 88px;
+        border-radius: 44px;
+        border: 1px solid $border-light;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 30px;
+
+        img {
+            @extend %for-img-responsive;
+        }
+    }
+
+    p {
+        color: $grey-text-color;
+        font-size: $font-size-l;
+        line-height: $font-size-for-h3;
+        @media only screen and (max-width: 991px) {
+            font-size: $font-size-l - 2px;
+            line-height: $font-size-for-h3 - 2px;
+          }
+          @media only screen and (max-width: 767px) {
+           margin-bottom: 20px;
+          }
+          
+          
+    }
+}

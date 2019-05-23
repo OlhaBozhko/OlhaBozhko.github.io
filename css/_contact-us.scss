@@ -1,0 +1,189 @@
+.contact-us {
+    padding-bottom: 395px;
+    padding-top: 60px;
+    background-color: $background-for-contact;
+    position: relative;
+
+    @media only screen and (max-width: 1199px) {
+        padding-bottom: 330px;
+        padding-top: 40px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding-bottom: 250px;
+    }
+    @media only screen and (max-width: 375px) {
+        padding-bottom: 270px; 
+      }
+      
+
+
+    h2 {
+        @extend %for-h2;
+
+    }
+
+    h5 {
+        @extend %for-h5;
+        margin-bottom: 28px;
+    }
+
+    .line {
+        margin: 36px 0 59px;
+
+        @media only screen and (max-width: 1199px) {
+            margin: 20px 0 15px;
+        }
+    }
+
+    .block-contact {
+        text-align: center;
+
+        .contact-img {
+            height: 32px;
+            position: relative;
+            margin-bottom: 30px;
+
+            img {
+                @extend %for-img-responsive;
+            }
+        }
+
+        p {
+            color: $grey-text-color;
+            font-size: $font-size-l;
+            line-height: $font-size-l + 4px;
+        }
+    }
+
+ 
+    form {
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        bottom: -59px;
+        left: 25%;
+        padding: 59px 85px 0 66px;
+        background-color: $dark-background;
+
+        @media only screen and (max-width: 575px) {
+            display: inline-block;
+        }
+
+        @media only screen and (max-width: 991px) {
+
+            padding: 39px 65px 0 46px;
+            bottom: -20px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            padding: 20px 20px 0 20px;
+            left: 27%;
+            bottom: -25px;
+        }
+
+        @media only screen and (max-width: 575px) {
+            padding: 15px 15px 0 15px;
+            left: 19%;
+        }
+        @media only screen and (max-width: 375px) {
+            bottom: 10px;
+          }
+          
+
+        .first {
+            margin-right: 19px;
+
+            input {
+                cursor: pointer;
+                padding: 12px 0 12px 18px;
+                background-color: transparent;
+                display: block;
+                margin-bottom: 20px;
+                border: 1px solid $border-light-dark;
+                @extend %for-placeholder;
+
+                &:active,
+                &:hover {
+                    border-color: $blue-text-color;
+                }
+
+                @media only screen and (max-width: 991px) {
+                    padding: 8px 0 8px 14px;
+                    margin-bottom: 10px;
+                }
+
+                @media only screen and (max-width: 767px) {
+                    padding: 5px 0;
+                    margin-bottom: 8px;
+                }
+
+                @media only screen and (max-width: 575px) {
+                    padding: 0;
+                }
+
+            }
+
+        }
+
+        .second {
+            textarea {
+                cursor: pointer;
+                padding-top: 19px;
+                padding-left: 21px;
+                background-color: transparent;
+                height: 190px;
+                width: 300px;
+                border: 1px solid $border-light-dark;
+                margin-bottom: 20px;
+                @extend %for-placeholder;
+
+                &:active,
+                &:hover {
+                    border-color: $blue-text-color;
+                }
+
+                @media only screen and (max-width: 991px) {
+                    height: 147px;
+                    width: 200px;
+                }
+
+                @media only screen and (max-width: 767px) {
+                    height: 137px;
+                    width: 150px;
+                }
+
+                @media only screen and (max-width: 575px) {
+                    width: 177px;
+                    height: 50px;
+                }
+
+            }
+
+            button {
+                margin-bottom: 40px;
+                margin-left: auto;
+                display: block;
+                @extend %for-button;
+                background: $blue-text-color;
+                color: $white-text-color;
+
+                @media only screen and (max-width: 767px) {
+                    margin-bottom: 30px;
+                }
+
+                @media only screen and (max-width: 575px) {
+                    margin-bottom: 15px;
+                }
+
+            }
+        }
+    }
+}
+   .map {
+                z-index: -1;
+                @media only screen and (max-width: 575px) {
+                   display: none;
+                }
+
+    }
