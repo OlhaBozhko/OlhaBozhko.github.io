@@ -155,6 +155,8 @@ body {
         margin: 36px 0 62px;
         line-height: 22px;
         color: #999999; }
+      body .first-section .introducing button.download {
+        color: #fffefe; }
       body .first-section .introducing:after {
         content: "";
         position: absolute;

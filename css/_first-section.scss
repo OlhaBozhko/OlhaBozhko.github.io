@@ -90,6 +90,7 @@
 
             &.download {
                 @extend %for-button-download;
+                color: $white-text-color;
             }
 
             &.features {
