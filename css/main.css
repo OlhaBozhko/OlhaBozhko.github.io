@@ -573,7 +573,8 @@ body {
         height: 190px;
         width: 300px;
         border: 1px solid rgba(255, 255, 255, 0.2);
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        color: #fffefe; }
         body .contact-us form .second textarea:active, body .contact-us form .second textarea:hover {
           border-color: #008fd6; }
         @media only screen and (max-width: 991px) {

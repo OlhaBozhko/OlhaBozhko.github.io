@@ -136,6 +136,7 @@
                 width: 300px;
                 border: 1px solid $border-light-dark;
                 margin-bottom: 20px;
+                color: $white-text-color;
                 @extend %for-placeholder;
 
                 &:active,
