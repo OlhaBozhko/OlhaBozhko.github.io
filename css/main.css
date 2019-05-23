@@ -37,7 +37,8 @@ body .first-section .introducing button, body .get-theme .button button, body .p
 
 body .first-section .introducing button.download, body .get-theme .button button.download {
   background: #008fd6;
-  margin-right: 20px; }
+  margin-right: 20px;
+  color: #fffefe; }
 
 body .plans .plans-wrapper:hover button {
   color: #fffefe !important;
@@ -155,8 +156,6 @@ body {
         margin: 36px 0 62px;
         line-height: 22px;
         color: #999999; }
-      body .first-section .introducing button.download {
-        color: #fffefe; }
       body .first-section .introducing:after {
         content: "";
         position: absolute;
